@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Electronic Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container"><h1 style="background-color: aqua;">Electronic Gagets</h1><br><br>
+        <div class="row">
+            <div class="col">
+              <!-- NAVIGAION BAR-->
+              <nav class="navbar navbar-expand-lg navbar-light bg-success"> 
+                <a class="navbar-brand mb-0 h1 navbar-light bg bg-light" href="#">Electronic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                  <ul>
+                    <!-- MODAL FOR LOGIN AND SIGNUP-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Signup</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="loginModalLabel">Login</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="loginEmail">Email address</label>
+          <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="signupUsername">Username</label>
+          <input type="text" class="form-control" id="signupUsername" placeholder="Enter username" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email address</label>
+          <input type="email" class="form-control" id="signupEmail" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Signup</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+            <div class="carousel slide" data-ride="carousel" id="slider"> 
+                <!-- indicator -->
+                <ul class="carousel-indicator">
+                    <li data-slide-to="0" data-target="#slider" class="active"></li>
+                    <li data-slide-to="1" data-target="#slider"></li>
+                    <li data-slide-to="2" data-target="#slider"></li>
+                </ul>
+                <div class="carousel-inner"> 
+                    <div class="carousel-item" data-interval="100">
+                        <img src="https://media.istockphoto.com/id/1397047877/photo/main-microchip-on-the-motherboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=wS-j0mVKhY-BK3QgNJLzTk3JwIA26JmCa23uw2lUw6Q=" alt="" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h5 class="text-white">slide 2</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam, consequuntur quis ea perferendis distinctio ut saepe corrupti voluptatem unde? Velit, ut ducimus? Tempore maxime accusamus pariatur voluptates cupiditate mollitia.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active" data-interval="100">
+                        <img src="https://media.istockphoto.com/id/1442852776/photo/robot-assembly-line-with-electric-car-battery-cells-module-on-platform.webp?a=1&b=1&s=612x612&w=0&k=20&c=WaWYpjzwqiBxgZkENZ3dXcAjP5t2u1Ys3-M9aJmKt9M=" alt="" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item active" data-interval="100">
+                      <img src="https://media.istockphoto.com/id/1456466961/photo/electric-car-battery-plug-in-with-ev-charging-station.webp?a=1&b=1&s=612x612&w=0&k=20&c=e495luF925Uxbnt1Zgg4W6oWMUeyzXhY-C5L3tMRGWk=" alt="" class="d-block w-100">
+                  </div>
+                </div>
+                <!-- control carousel-->
+                <a href="#slide" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#slider" class="carousel-control-next" data-ride="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+        </div>
+    </div>
+</div>
+    <!-- CARDS-->
+    <div class="row m-5">
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1397047877/photo/main-microchip-on-the-motherboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=wS-j0mVKhY-BK3QgNJLzTk3JwIA26JmCa23uw2lUw6Q=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1373109577/photo/close-up-image-of-a-businesswomans-hand-typing-on-a-computer-laptop-at-the-white-working-desk.webp?a=1&b=1&s=612x612&w=0&k=20&c=Uku9Cd40f8bXggqOFoIdBapVN0TN1ep5bHNpVzqWgCI=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1436416795/photo/cybersecurity-specialist.webp?a=1&b=1&s=612x612&w=0&k=20&c=3urE7JXC2Piq3c6IgLmGTOx7oD0XBg-zyReILMtSkSw=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1482874478989-aaf30c03fe37?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2V5Ym9hcmR8ZW58MHx8MHx8fDA%3D" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1577538926988-7926820ed209?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vZGVtfGVufDB8fDB8fHww" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1010650736/photo/back-view-shot-of-the-beautiful-professional-gamer-girl-playing-in-online-first-person.webp?a=1&b=1&s=612x612&w=0&k=20&c=N7Va7aODH1QapiG1Cnl2ED-mpXmZNoJySqNE8VEej5g=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1315356912/photo/beoplay-h6-headphone.webp?a=1&b=1&s=612x612&w=0&k=20&c=2I1nSOC_i1WWohUbMIJUX4STsx_PxssjRFJMdVKzpk8=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1461453147/photo/gamer-playing-videogame.webp?a=1&b=1&s=612x612&w=0&k=20&c=J3kqFhlDvYIeX75shrHfUcbhKNjjZDPaDJqXb8gZfoc=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1596658591534-591d75e2f2f7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhhcmR3YXJlfGVufDB8fDB8fHww" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/2152031133/photo/renovation-repair-concept-tools-3d-icon-on-the-abstract-human-hand-made-with-atom-array-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=MaTEq6nvNEiqJChxysiB-3KZzsS50lx0fV1lWY2XuWw=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1283488555/photo/project-manager-working-with-gantt-chart-planning-schedule-tracking-milestones-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=5AWmxnenIAYHsE7W7gHL7xl3vXO7s4Pe1wig_jQv5vs=" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+        </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="https://plus.unsplash.com/premium_photo-1681426669771-d2113672a49b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGFyZHdhcmV8ZW58MHx8MHx8fDA%3D" alt="" class="card-img-top">
+        <div class="card-body"><h3 class="card-title">electronic</h3>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi eius amet saepe ad rerum sint aut corporis facilis, ullam sapiente optio rem deserunt debitis praesentium autem, voluptates voluptatum itaque.</p>
+           <a href="#" class="btn btn-primary">electronic device</a>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <!-- Name input -->
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+      
+              <!-- Email input -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+      
+              <!-- Subject input -->
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+              </div>
+      
+              <!-- Message textarea -->
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+              </div>
+      
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        </div>
+        </div>
+        <!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-auto">
+    <div class="text-center p-3" style="background-color: #f1f1f1;">
+      <a class="text-dark" href="#"><h3 style="color: blueviolet;">Designed by Monika</h3></a>
+    </div>
+  </footer>
+    </div>
+</body>
+</html>

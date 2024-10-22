@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Electronic Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="background-color: aqua;">Electronic Gadgets</h1>
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <!-- NAVIGATION BAR -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                    <a class="navbar-brand mb-0 h1 navbar-light bg-light" href="#">Electronic</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav">
+                            <!-- MODAL FOR LOGIN AND SIGNUP -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginPassword">Password</label>
+                                        <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signup Modal -->
+                <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="signupUsername">Username</label>
+                                        <input type="text" class="form-control" id="signupUsername" placeholder="Enter username" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupEmail">Email address</label>
+                                        <input type="email" class="form-control" id="signupEmail" placeholder="Enter email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signupPassword">Password</label>
+                                        <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Signup</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div id="slider" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="100">
+                            <img src="https://media.istockphoto.com/id/1442852776/photo/robot-assembly-line-with-electric-car-battery-cells-module-on-platform.webp?a=1&b=1&s=612x612&w=0&k=20&c=WaWYpjzwqiBxgZkENZ3dXcAjP5t2u1Ys3-M9aJmKt9M=" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-interval="100">
+                            <img src="https://media.istockphoto.com/id/1397047877/photo/main-microchip-on-the-motherboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=wS-j0mVKhY-BK3QgNJLzTk3JwIA26JmCa23uw2lUw6Q=" alt="" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5 class="text-white">Slide 2</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam, consequuntur quis ea perferendis distinctio ut saepe corrupti voluptatem unde? Velit, ut ducimus? Tempore maxime accusamus pariatur voluptates cupiditate mollitia.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="100">
+                            <img src="https://media.istockphoto.com/id/1456466961/photo/electric-car-battery-plug-in-with-ev-charging-station.webp?a=1&b=1&s=612x612&w=0&k=20&c=e495luF925Uxbnt1Zgg4W6oWMUeyzXhY-C5L3tMRGWk=" alt="" class="d-block w-100">
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="row m-5">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://media.istockphoto.com/id/1397047877/photo/main-microchip-on-the-motherboard.webp?a=1&b=1&s=612x612&w=0&k=20&c=wS-j0mVKhY-BK3QgNJLzTk3JwIA26JmCa23uw2lUw6Q=" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://media.istockphoto.com/id/1456466961/photo/electric-car-battery-plug-in-with-ev-charging-station.webp?a=1&b=1&s=612x612&w=0&k=20&c=e495luF925Uxbnt1Zgg4W6oWMUeyzXhY-C5L3tMRGWk=" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://media.istockphoto.com/id/1442852776/photo/robot-assembly-line-with-electric-car-battery-cells-module-on-platform.webp?a=1&b=1&s=612x612&w=0&k=20&c=WaWYpjzwqiBxgZkENZ3dXcAjP5t2u1Ys3-M9aJmKt9M=" class="card-img-top" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
